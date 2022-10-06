@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Marker';
+    src: url('assets/PermanentMarker-Regular.ttf') format('truetype');
+}
+
+:root {
+  --theme-darkest: black;
+  --theme-dark: #3E3636;
+  --theme-mid: #D72323;
+  --theme-light: #F5EDED;
+  --header-font: 'Marker';
+}
+
+body, header, main, footer, header > * {margin:0px;}
+body, header, main, footer, header > * {padding:0px;}
+body {background-color:var(--theme-light)}
+header {
+	background-color:var(--theme-darkest);
+	color:white;
+	position:fixed;
+	top:0px;
+	width:100%;
+}
+header > * {
+	font-family:var(--header-font), serif;
+	font-size:4vh;
+	padding:0.2rem;
+	margin:0.5rem;
+	float:left;
+}
+main {
+	margin-top:13vh;
+	padding-bottom:13vh;
+	display:flex;
+	align-items:center;
+	flex-flow:column nowrap;
+}
+main > p {margin:0px 10vw 0px 10vw;}
+footer {
+	background-color:var(--theme-dark);
+	color:var(--theme-light);
+	position:fixed;
+	bottom:0px;
+	width:100%;
+	text-align:center;
+}
+#projectLogo {width:10vw;}
+header > nav > a > img { height:5vh;filter:invert(100%);}
+header > nav {align-self:flex-end;float:right;}
+.h-sep {color: var(--theme-mid);font-family:serif;}
+
+@media (orientation: portrait) {
+	header > div, header > h2 {visibility:hidden;font-size:1px;}
+	header > nav > a > img { height:4vh;}
+	#projectLogo {width:20vw;}
+}
+
