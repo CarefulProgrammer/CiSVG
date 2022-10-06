@@ -1,0 +1,6 @@
+@media (orientation: portrait) {
+	header > div, header > h2 {visibility:hidden;font-size:1px;}
+	header > nav > a > img { height:4vh;}
+	#projectLogo {width:20vw;}
+}
+

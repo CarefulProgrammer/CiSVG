@@ -1,0 +1,46 @@
+:root {
+  --theme-darkest: black;
+  --theme-dark: #3E3636;
+  --theme-mid: #D72323;
+  --theme-light: #F5EDED;
+  --header-font: 'Marker';
+}
+
+body, header, main, footer, header > * {margin:0px;}
+body, header, main, footer, header > * {padding:0px;}
+body {overflow-x:hidden;}
+body {background-color:var(--theme-light)}
+header {
+	background-color:var(--theme-darkest);
+	color:white;
+	position:fixed;
+	top:0px;
+	width:100%;
+}
+header > * {
+	font-family:var(--header-font), serif;
+	font-size:4.3vh;
+	margin:1vh;
+	float:left;
+}
+main {
+	margin-top:10vh;
+	display:flex;
+	align-items:streach;
+	align-content:streach;
+	flex-flow:row nowrap;
+	height:88vh;
+	background-color:white;
+}
+main > p {margin:0px 10vw 0px 10vw;}
+footer {
+	background-color:var(--theme-dark);
+	color:var(--theme-light);
+	width:100%;
+	text-align:center;
+}
+#projectLogo {width:6vh;}
+header > nav > a > img { height:4vh;filter:invert(100%);}
+header > nav {align-self:flex-end;float:right;}
+.h-sep {color: var(--theme-mid);font-family:serif;}
+

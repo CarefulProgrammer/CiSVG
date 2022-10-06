@@ -1,0 +1,19 @@
+/* This file addresses the CSS of Elements within the Main Element. The Main element uses flex*/
+@font-face {
+    font-family: 'Marker';
+    src: url('../assets/PermanentMarker-Regular.ttf') format('truetype');
+}
+
+#display {background-color:var(--theme-light);flex:60%;}
+#toolBox {background-color:var(--theme-mid);flex:40%;}
+
+#display, #toolBox {
+  display:flex;
+  flex-flow:column wrap;
+}
+#canvas {background-color:white;flex:100%;}
+#buttons {flex:20%;display:flex;justify-content:center;align-items:center;}
+#submitToConvert {height:10vh;color:white;background-color:var(--theme-dark);border:none;border-radius:10px;font-family:'Marker', serif;width:10vw;}
+#submitToConvert:hover {background-color:var(--theme-darkest);}
+#svgPath {background-color:var(--theme-light);flex:80%;}
+

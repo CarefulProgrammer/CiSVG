@@ -6,20 +6,34 @@
 	<title>CiSVG | A Polar-Form SVG Path to Rectangular-Form SVG Path Converter.</title>
 	<meta name="description" content="A Polar-Form SVG Path to Rectangular-Form SVG Path Converter.">
 	<meta name="keywords" content="SVG HTML CSS JS Polar-Form Rectangular-Form Path Converter">
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/CiSVG.css">
+	<link rel="stylesheet" type="text/css" href="css/portrait.css">
 </head>
 <body>
 	<header>
+		<img alt="projectLogo" id="projectLogo" src="assets/CiSVG logo.svg"/>
 		<h1>CiSVG</h1>
 		<div class="h-sep">|</div>
 		<h2>SVG Waves</h2>
 		<nav><a href="https://carefulprogrammer.github.io/"><img src="assets/home-icon.svg"/></a></nav>
 	</header>
 	<main>
-		<img alt="projectLogo" id="projectLogo" src="assets/CiSVG logo.svg"/>
-		<h1>CiSVG</h1>
-		<p>&nbsp;&nbsp;&nbsp;&nbsp;A Polar-Form SVG Path to Rectangular-Form SVG Path Converter. (Comming Soon)</p>
+		<div id="display">
+			<div id="canvas">
+				<svg  viewBox="0 0 300 100"  xmlns="http://www.w3.org/2000/svg"  stroke="black" fill="blue">
+					<path id="mainPath" d="M 10 10 H 90 V 90 H 10 L 5 5 z"/>
+				</svg>
+			</div>
+		</div>
+		<div id="toolBox">
+			<div id="buttons">
+				<button id="submitToConvert" onclick="convertToRect();">Convert</button>
+			</div>
+			<div type="text" id="svgPath" contenteditable=true></div>
+		</div>
 	</main>
 	<footer>&copy; 2022 S M Mohtashim Ahmed (MIT LICENSE)</footer>
+	<script src="scripts/convertFromPolarToRect.js"></script>
 </body>
 </html>
