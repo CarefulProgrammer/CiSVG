@@ -15,7 +15,7 @@
 
 An online Polar-Form SVG Path to Rectangular-Form SVG Path Converter.
 
-<img alt="screenshow" src="Screenshots/Screenshot #1.png"/>
+<img alt="screenshow" src="Screenshots/Screenshot %231.png"/>
 
 # Getting Started
 
