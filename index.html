@@ -15,13 +15,18 @@
 		<img alt="projectLogo" id="projectLogo" src="assets/CiSVG logo.svg"/>
 		<h1>CiSVG</h1>
 		<div class="h-sep">|</div>
-		<h2>SVG Waves</h2>
-		<nav><a href="https://carefulprogrammer.github.io/"><img src="assets/home-icon.svg"/></a></nav>
+		<h2>Polar SVG</h2>
+		<nav>
+			<a href="https://www.github.com/carefulprogrammer/CiSVG" target="_blank"><img src="assets/GitHub-Mark-32px.png"/></a>
+			<a href="https://carefulprogrammer.github.io/"><img src="assets/home-icon.svg"/></a>
+		</nav>
 	</header>
 	<main>
+		<div id="smallPanel"></div>
+		<input type="checkbox" id="hidePanel"/>
 		<div id="display">
 			<div id="canvas">
-				<svg  viewBox="0 0 300 100"  xmlns="http://www.w3.org/2000/svg"  stroke="black" fill="blue">
+				<svg id="svgDisplay" viewBox="0 0 1600 900"  xmlns="http://www.w3.org/2000/svg"  stroke="black" fill="blue">
 					<path id="mainPath" d="M 10 10 H 90 V 90 H 10 L 5 5 z"/>
 				</svg>
 			</div>
@@ -29,8 +34,12 @@
 		<div id="toolBox">
 			<div id="buttons">
 				<button id="submitToConvert" onclick="convertToRect();">Convert</button>
+				<button id="clearButton" onclick="clearPath();">Clear</button>
 			</div>
-			<div type="text" id="svgPath" contenteditable=true></div>
+			<h1 id="polarPathHead">Polar Path</h1>
+			<div id="svgPath" contenteditable=true></div>
+			<h1 id="rectangularPathHead">Rectangular Path</h1>
+			<div id="rectPath"></div>
 		</div>
 	</main>
 	<footer>&copy; 2022 S M Mohtashim Ahmed (MIT LICENSE)</footer>

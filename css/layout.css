@@ -1,14 +1,13 @@
 :root {
   --theme-darkest: black;
-  --theme-dark: #3E3636;
-  --theme-mid: #D72323;
-  --theme-light: #F5EDED;
+  --theme-dark: #3e3636;
+  --theme-mid: #d72323;
+  --theme-light: #feeded;
   --header-font: 'Marker';
 }
 
-body, header, main, footer, header > * {margin:0px;}
-body, header, main, footer, header > * {padding:0px;}
-body {overflow-x:hidden;}
+body, header, main, footer, header > * {margin:0px;padding:0px;}
+body {overflow-x:hidden;overflow-y:hidden;}
 body {background-color:var(--theme-light)}
 header {
 	background-color:var(--theme-darkest);
@@ -16,6 +15,8 @@ header {
 	position:fixed;
 	top:0px;
 	width:100%;
+	box-shadow:inset 0px -5px 10px #292929, inset 0px 5px 10px #292929;
+	z-index:100;
 }
 header > * {
 	font-family:var(--header-font), serif;
@@ -24,12 +25,12 @@ header > * {
 	float:left;
 }
 main {
-	margin-top:10vh;
+	margin-top:7vh;
 	display:flex;
 	align-items:streach;
 	align-content:streach;
 	flex-flow:row nowrap;
-	height:88vh;
+	height:90.5vh;
 	background-color:white;
 }
 main > p {margin:0px 10vw 0px 10vw;}
@@ -38,6 +39,9 @@ footer {
 	color:var(--theme-light);
 	width:100%;
 	text-align:center;
+	font-size:1rem;
+	position:relative;
+	z-index:99;
 }
 #projectLogo {width:6vh;}
 header > nav > a > img { height:4vh;filter:invert(100%);}
