@@ -1,6 +1,10 @@
 @media (orientation: portrait) {
+	main {flex-flow:column nowrap;}
 	header > div, header > h2 {visibility:hidden;font-size:1px;}
 	header > nav > a > img { height:4vh;}
-	#projectLogo {width:20vw;}
+	#projectLogo {height:6vh;}
+	#submitToConvert, #clearButton {font-size:1.2rem;}
+	#svgDisplay {height:calc(9vh*7.2);width:calc(16vh*7.2);view-box:'0 0 100 100';}
+	#moveCanvasPanel, #moveCanvas {visibility:visible;}
 }
 
