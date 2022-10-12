@@ -19,10 +19,15 @@ An online Polar-Form SVG Path to Rectangular-Form SVG Path Converter.
 
 # Getting Started
 
-It is still under development, however the conversion works fine!
-1. All the symbols like "M,m,L,l" etc. works!
+All you need to know about the program!
+
+1. All the symbols like "M,m,L,l,C,c" etc. works!
 2. The coordinates are supplied like this `M 700 -45d` which translates to `M 494.975 494.975`.
-3. The `d` suffix must be supplied for degrees, otherwise radians is assumed. (more support for radians comming soon)
+3. Multiple coordinates are supplied like this `c 100 -45d 130 -40d 200 0d` which translates to `c 70.711 70.711 99.586 83.562 200 0`. (The translation depends on the placement of the last point if a small-alphabet command is used)
+4. The `d` suffix must be supplied for degrees, otherwise radians is assumed. (more support for radians comming soon)
+5. The translation system rounds off to 3 digits after the decimal-point. This makes the usage of `z` even more important!
+6. Support for coordinate placement using the last placed coordinate is comming soon!
+7. Use a bigger screen and a landscaped screen for best usage.
 
 ## Contributing
 
